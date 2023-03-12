@@ -1,11 +1,11 @@
 
-## Download all the folders' files (images) from remote URL and convert them to PDF
+## Download folders (containing images) from a remote URL and convert them to PDFs.
 
 
 
 #### Prerequisites:
 
-- Python 3.6+ (Optional, if you want to use the script to download all the folders)
+- [OPTIONAL] Python 3.6+
 
 
 
@@ -16,9 +16,9 @@
 git clone git@github.com:boolfalse/bash-download-folders.git && cd bash-download-folders
 ```
 
-- Change shell script permissions:
+- Change shell scripts permissions:
 ```bash
-chmod +x download.sh
+chmod +x download.sh check-is-full.sh convert.sh
 ```
 
 - Optional: Create a text file with the specific list of folders you want to download from the remote URL.

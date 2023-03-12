@@ -56,12 +56,11 @@ for dir in "$inputDir"*; do
   if [ -d "$dir" ]; then
     # get directory name. the name could contain spaces, so we need to use quotes
     folderName=$(basename "$dir")
-
     # check if exists $dir".pdf" file in the output directory
     if [ ! -f $outputDir$folderName".pdf" ]; then
-        echo "Processing $dir..."
-        # run python command
-        python images2pdf.py "$dir" $outputDir$folderName".pdf"
+      echo "Processing $dir..."
+      # run python command
+      python images2pdf.py "$dir" $outputDir$folderName".pdf"
     fi
   fi
 done
