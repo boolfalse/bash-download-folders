@@ -2,7 +2,7 @@
 
 # Usage:
 # ./check-is-full.sh <root_url> <output_directory>
-# ./check-is-full.sh http://serials.flib.sci.am/openreader/ /home/user/Downloads/
+# ./check-is-full.sh http://serials.flib.sci.am/openreader/ /home/user/Downloads/folders/
 
 # define a function to print the usage
 function printUsage {

@@ -2,7 +2,7 @@
 
 # Usage:
 # ./download.sh <root_url> <output_directory> <text_file_with_list_of_folders>
-# ./download.sh http://serials.flib.sci.am/openreader/ /home/user/Downloads/ folders.txt
+# ./download.sh http://serials.flib.sci.am/openreader/ /home/user/Downloads/folders/ folders.txt
 
 # define a function to print the usage
 function printUsage {

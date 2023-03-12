@@ -1,5 +1,5 @@
 
-## Download all the folder files from remote URL
+## Download all the folders' files (images) from remote URL and convert them to PDF
 
 
 
@@ -32,11 +32,8 @@ echo "Abgar_1897/" >> folders.txt
 - Download folders:
 ```bash
 ./download.sh <root_url> <output_directory> <text_file_with_list_of_folders>
-```
-
-- Example:
-```bash
-./download.sh http://serials.flib.sci.am/openreader/ /home/user/Downloads/ folders.txt
+# Example:
+# ./download.sh http://serials.flib.sci.am/openreader/ /home/user/Downloads/folders/ folders.txt
 ```
 
 - Params:
@@ -44,6 +41,27 @@ echo "Abgar_1897/" >> folders.txt
 > *output_directory* is the directory where the folders will be downloaded to.
 > *text_file_with_list_of_folders* is optional, if not provided, the script will download all folders.
 
+- Check if all the folders (images) are downloaded completely:
+```bash
+./check-is-full.sh <root_url> <output_directory>
+# Example:
+# ./check-is-full.sh http://serials.flib.sci.am/openreader/ /home/user/Downloads/folders/
+```
+
+- Params:
+> *root_url* is a valid URL to the folders.
+> *output_directory* is the directory where the folders are downloaded to.
+
+- Convert all the folders' files (images) to PDF:
+```bash
+./convert.sh <input_directory_path> <output_directory_path>
+# Example:
+# ./convert.sh /home/user/Downloads/folders/ /home/user/Downloads/pdfs/
+```
+
+- Params:
+> *input_directory_path* is the directory where the folders are downloaded to.
+> *output_directory_path* is the directory where the PDFs should be saved.
 
 
 
