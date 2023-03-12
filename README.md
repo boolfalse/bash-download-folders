@@ -46,11 +46,6 @@ echo "Abgar_1897/" >> folders.txt
 
 
 
-#### TODOs:
-
-- [ ] Add "check-is-full.sh" script to check if the downloaded folders are fully downloaded.
-
-
 
 #### Author:
 
